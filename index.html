@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FLDSMDFR-Mundo Comida</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img src="imagenes/AAAABfC_WTcWWj18ZXiAXARUHmMB0w7PNWXhXQ6kjW_msIfroVlzt4f5t7dyY3tm-r1uRdn6NKtmM8_ej34ZJm_p_Jkw.jpg" alt=""><!--Etiqueta para insertar una imagen-->
+        <br>
+        <hr>
+        <i><h1><mark>FLDSMDFR-Mundo Comida</mark></h1></i><!--titulo más grande con resaltado-->
+        <h2><p>RECETAS SALVAJES</p></h2>
+        <h2><p>Lluvia de Hamburguesa</p></h2>
+        <ol>
+            <li>Hamburguesa de res.</li>
+            <ul>
+                <li>¡A cocinar!</li>
+                <li><a href="Micuarta_pagina.html">Hamburguesa en 40 minutos</a></li>
+            </ul>
+        </ol>
+        <h2><p>Familia Pie de Fresas</p></h2>
+        <ol>
+            <li>Fresas con leche condensada.</li>
+            <ul>
+                <li>¡A cocinar!</li>
+                <li><a href="Miquinta_pagina.html">Pie en 35 minutos</a></li>
+            </ul>
+        </ol>
+        <h2><p>Maratón Flan de Banana</p></h2>
+        <ol>
+            <li>Plátano y vainilla.</li>
+            <ul>
+                <li>¡A cocinar!</li>
+                <li><a href="Miquinta_pagina.html">Flan en 50 minutos</a></li>
+            </ul>
+        </ol>
+        <hr>
+        <br>
+        <img src="imagenes/6ILYL4OY2FFC3ARPHTJXGVPRPU.jpg" alt=""><!--Etiqueta para insertar una imagen-->
+        <h2>Costos de las recetas</h2>
+        <table>
+            <tr>
+                <th>Lluvia de hamburguesas</th>
+                <th>Familia Pie de Fresas</th>
+                <th>Maratón Flan de Banana</th>
+            </tr>
+            <tr>
+                <td>4 porciones</td>
+                <td>4 porciones</td>
+                <td>4 porciones</td>
+            </tr>
+            <tr>
+                <td>20.000 pesos colombianos</td>
+                <td>10.000 dólares</td>
+                <td>15.000 euros</td>
+            </tr>
+        </table>
+        <h2>Formulario de Contacto</h2> <!-- Título del formulario que aparece en la página -->
+        <form action="/enviar" method="post"> <!-- Comienza el formulario, que enviará los datos al servidor con método POST -->
+            <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de nombre, se usa para indicar qué se espera en el campo de entrada -->
+            <input type="email" id="email" name="email" required><br><br> <!-- Campo de entrada para el correo electrónico, de tipo email, obligatorio -->
+            <label for="mensaje">Mensaje:</label><br> <!-- Etiqueta para el campo de mensaje -->
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br> <!-- Área de texto donde el usuario puede escribir un mensaje, con filas y columnas especificadas -->
+            <button type="submit">Enviar</button> <!-- Botón para enviar -->
+        </form>
+    </body>
+</html>

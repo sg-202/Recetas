@@ -1,0 +1,86 @@
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho de la página */
+    margin: 20px 0; /* Márgenes de la tabla */
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+}
+
+th, td {
+    padding: 10px; /* Relleno dentro de las celdas */
+    text-align: left; /* Alinear el texto a la izquierda */
+    border: 3px solid rgb(204, 200, 200); /* Bordes de las celdas */
+}
+
+th {
+    background-color: blanchedalmond; /* Fondo para el encabezado */
+    color: rgb(194, 46, 46); /* Color del texto del encabezado */
+}
+
+tr:hover {
+    background-color: rgb(251, 205, 255); /* Cambia el fondo de las celdas al pasar el mouse */
+}
+
+body {
+    text-align: center; /* Centra el texto de todo el cuerpo */
+}
+
+ol, ul {
+    text-align: center;
+    list-style-position: inside; /* Asegura que las viñetas estén dentro del área centrada */
+}
+
+mark {
+    background-color: lightgreen; /* Fondo del resaltado */
+    color: rgb(179, 153, 66); /* Color del texto resaltado */
+}
+h2{
+    color: rgb(130, 3, 203); /* Color del texto del encabezado */
+}
+img {
+    width: 500px;
+    animation: mover-horizontal 1s infinite alternate;/*Movimiento a la imagen*/
+  }
+  
+  @keyframes mover-horizontal {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }
+  h1 {
+    font-size: 36px;/*Maquina de escribir*/
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Oculta el texto */
+    animation: escribir 10s steps(30, end) infinite;
+  }
+  
+  @keyframes escribir {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  h2 {
+    font-size: 25px;/*Tipo zoom*/
+    animation: zoom 2s infinite;
+  }
+  
+  @keyframes zoom {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  img {
+    border-radius: 50%;/*imagen circular*/
+}
+body {
+    background: linear-gradient(to right, #ff7e5f, #7be4fe);/*fondo de pantalla con colores de degradee*/
+}
